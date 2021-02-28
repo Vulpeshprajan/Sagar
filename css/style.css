@@ -1,0 +1,156 @@
+:root {
+  --main-color: #0545a3;
+  --main-color2: #d12f2f;
+  --main-color3: rgb(128, 128, 255);
+}
+
+html,
+body {
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  font-family: "Akaya Telivigala", cursive;
+  color: #333;
+}
+
+/* ========= header ======= */
+.header {
+  min-height: 60vh;
+  background: url("/i1.png") center center no-repeat;
+  background-size: cover;
+}
+
+/* ============ navbar ====== */
+
+.navbar {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  /* padding: 0%; */
+}
+
+.navbar .navbar-brand {
+  letter-spacing: 0.3rem;
+  font-size: 1.8rem;
+  background: -webkit-linear-gradient(90deg, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== navebar menu ===== */
+
+#navbarNav ul {
+  margin-left: auto;
+}
+
+.navbar .nav-link {
+  color: var(--main-color);
+}
+
+.navbar .active {
+  color: var(--main-color2);
+}
+
+.navbar .nav-link:hover {
+  color: var(--main-color2);
+}
+
+/* .container .col-md-5 {
+  transition: all 1s;
+}
+
+.container .col-md-5:hover {
+  transform: scale(1.1);
+} */
+
+/* hero */
+
+.hero-text {
+  font-size: 1.5rem;
+}
+
+.hero-text h1 {
+  color: var(--main-color2);
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+#header .navbar-brand img {
+  background-size: cover;
+  border-radius: 50px;
+}
+
+.btn:hover {
+  color: black;
+
+  border-width: 4px;
+}
+
+hr {
+  color: #f05f44;
+  /* border-width: var; */
+}
+
+/* ========= skill section ==============*/
+.section-title {
+  margin: 2rem;
+  font-size: 3rem;
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.skills div {
+  min-width: 30%;
+  font-size: 3rem;
+}
+.about-me {
+  background-image: linear-gradient(#aacef9, #d49494);
+}
+
+.contact {
+  background: #07d2d21a;
+}
+.contact-list {
+  font-size: 2rem;
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: var(--main-color3);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: cornflowerblue;
+}
+
+/* ======== go to home  */
+footer {
+  position: relative;
+}
+
+#to-up {
+  position: fixed;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  z-index: 999;
+  bottom: 50px;
+  right: 50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
